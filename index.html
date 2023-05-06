@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="normalice.css">
+  <link rel="stylesheet" href="index.css">
+  <title>Document</title>
+</head>
+<body>
+  
+  <header id="header">
+    <p>PAGINA DE PRUEBA</p>
+  </header>
+
+
+
+  <div id="inicioSesion">
+    <div id="texto">
+      <input type="text" id="userName" class="dentro" placeholder="Usuario">
+      <input type="password" id="userPassword" class="dentro" placeholder="Contraseña">
+    </div>
+    <div id="buttons">
+      <button id="registrar" class="button">
+        Registrar
+      </button>
+      <button id="ingresar" class="button">
+        Ingresar
+      </button>
+    </div >
+  </div>
+
+  <footer id="footer">
+    <section>
+      <ul>
+        <li>
+          Derechos reservados
+        </li>
+        <li>
+          Informacion
+        </li>
+        <li>
+          Tipo de licencia
+        </li>
+      </ul>
+    </section>
+  </footer>
+
+<script>
+  let button = document.getElementById("ingresar")
+
+
+
+  button.onclick = function() {
+    let field = document.getElementById("userName").value
+    alert("hola "+field)
+
+  }
+
+</script>
+
+</body>
+</html>
