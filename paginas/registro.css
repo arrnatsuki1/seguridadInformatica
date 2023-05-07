@@ -1,0 +1,38 @@
+.header {
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+}
+
+.titulo {
+    font-size: 2rem;
+}
+
+p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.lado {
+    display: inline-flex;
+    background-color: gray;
+}
+
+.cuerpo {
+    display: flex;
+    background-color: purple;
+}
+
+.btnReg {
+    display: flex;
+    justify-content: right;
+    align-items: end;
+}
+
+.registroContenido {
+    justify-content: center;
+}
+
+.contenido {
+    background-color: blue;
+    display: flex;
+}
