@@ -16,20 +16,20 @@
 
 
 
-  <div id="inicioSesion">
+  <form id="inicioSesion" name="formIng" method="get" action="code/buscarUsuario.php">
     <div id="texto">
-      <input type="text" id="userName" class="dentro" placeholder="Usuario">
-      <input type="password" id="userPassword" class="dentro" placeholder="Contraseña">
+      <input type="text" id="userName" class="dentro" placeholder="Usuario" name="nombre">
+      <input type="password" id="userPassword" class="dentro" placeholder="Contraseña" name="contrasenia">
     </div>
     <div id="buttons">
-      <button id="registrar" class="button">
+      <button id="registrar" class="button" type="button">
         Registrar
       </button>
-      <button id="ingresar" class="button">
+      <button id="ingresar" class="button" type="submit">
         Ingresar
       </button>
     </div >
-  </div>
+  </form>
 
   <footer id="footer">
     <section>
@@ -53,6 +53,5 @@
     location.href = "./paginas/registro.html"
   }
 </script>
-
 </body>
 </html>
