@@ -1,10 +1,6 @@
 <?php
 include("cn.php");
 
-$a = 'a';
-
-echo $a;
-
 $nombre = $_POST["nombre"];
 $pswd = $_POST["pswd2"];
 
