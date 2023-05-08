@@ -1,43 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../normalice.css">
-  <link rel="stylesheet" href="registro.css">
-  <title>Registro</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../normalice.css">
+    <link rel="stylesheet" href="registro.css">
+    <title>Registro</title>
 </head>
+
 <body>
     <header class="header">
         <p class="titulo">
             Pagina de registro
         </p>
     </header>
-    <div class="cuerpo">
-        <aside class="lado">
-            <div class="btnReg">
-                <button>
-                    Regresar
-                </button>
-            </div>
-        </aside>
-        <div class="contenido">
-            <div class="registroContenido">
-                <p>Nombre</p>
-                <input type="text">
-                <p>Contraseña</p>
-                <input type="password" name="pswd1">
-                <p>Repite la contraseña</p>
-                <input type="password" name="pswd2">
-            </div>
-            <div class="btnReg">
-                <button>Registrar</button>
-            </div>
+    <form class="cuerpo" action="../code/agregar.php" method="post">
+        <div class="registroContenido">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre">
+            <label for="pswd1">Contraseña</label>
+            <input type="password" name="pswd1" id="pswd1">
+            <label for="pswd2">Repite la contraseña</label>
+            <input type="password" name="pswd2" id="pswd2">
+            <label for="profileImage">Imagen de perfil</label>
+            <input type="file" name="profileImage" class="profileImage" id="profileImage">
         </div>
-    </div>
+        <div class="divBtnReg">
+            <button class="btnReg" type="submit">Registrar</button>
+        </div>
+    </form>
     <footer class="final">
 
     </footer>
 </body>
+
 </html>
