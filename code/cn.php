@@ -1,7 +1,7 @@
 <?php
     $user = "root";
     $route = "127.0.0.1";
-    $pswd = "AACEF6E8D16F04BB";
+    $pswd = "15346Rey";
     $table = "informatica";
     $charset = "UTF8";
 
