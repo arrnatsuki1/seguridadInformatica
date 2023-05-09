@@ -4,7 +4,7 @@ include("cn.php");
 $nombre = $_POST["nombre"];
 $pswd = $_POST["pswd2"];
 
-    $codigoSQL = "INSERT INTO usuarios(id, nombre, contrasenia) VALUES (1, '$nombre', '$pswd')";
+    $codigoSQL = "INSERT INTO usuarios(nombre, contrasenia) VALUES ('$nombre', '$pswd')";
     $resultSet = mysqli_query($conexion , $codigoSQL);
 
 
