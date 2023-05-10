@@ -23,8 +23,6 @@ if($verificacion){
     return;
 }
 
-    
-
     $codigoSQL = "INSERT INTO usuarios( nombre, contrasenia) VALUES ('$nombre', '$pswd1')";
     $resultSet = mysqli_query($conexion , $codigoSQL);
 

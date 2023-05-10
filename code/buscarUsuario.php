@@ -22,7 +22,7 @@ if(mysqli_num_rows($verificacion) == 0){
      if($resultSet) {
         while($row = $resultSet->fetch_assoc()) {
             if($row["nombre"] == $nombre and $row["contrasenia"] == $contra ) {
-                echo "FELICIDADES SI INGRESO"."<br>";
+                echo '<script language="javascript">alert("Felicidades, ingreso");window.location.href="../paginas/sesion.html"</script>';
                 echo $nombre;
             }
         }
