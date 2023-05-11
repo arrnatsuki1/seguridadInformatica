@@ -16,6 +16,10 @@ if (!preg_match("/^[a-zA-Z ]*$/", $nombre)) {
     return;
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 23d5b0750344751ddcdc69d5eb4d87ac1d4c2201
 
 if($pswd1 != $pswd2){
         echo '<script language="javascript">alert("Las contraseñas no concuerdan");window.location.href="../paginas/registro.html"</script>';
@@ -62,6 +66,12 @@ if(isset($_FILES['profileImage']) && $_FILES['profileImage']['error'] == 0){
 
     // Insertar el usuario con la contraseña encriptada y la imagen
     $codigoSQL = "INSERT INTO usuarios(nombre, contrasenia, imagen) VALUES ('$nombre', '$contraseniaEncriptada', '$imgDataEscaped')";
+<<<<<<< HEAD
+=======
+=======
+    $codigoSQL = "INSERT INTO usuarios( nombre, contrasenia) VALUES ('$nombre', '$pswd1')";
+>>>>>>> 6663dd18037d56611aa58e0a2d63985e0d5acfb4
+>>>>>>> 23d5b0750344751ddcdc69d5eb4d87ac1d4c2201
     $resultSet = mysqli_query($conexion , $codigoSQL);
 
     if($resultSet) {
