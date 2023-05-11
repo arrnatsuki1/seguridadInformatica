@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 include("../index.html")
                 
                 session_start();
@@ -14,3 +15,7 @@ include("../index.html")
                   
                 }
             ?>
+=======
+	header("location:sesion.html");
+?>
+>>>>>>> 6663dd18037d56611aa58e0a2d63985e0d5acfb4
