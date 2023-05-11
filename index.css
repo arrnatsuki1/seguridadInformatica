@@ -2,6 +2,8 @@ body {
     background-color: white;
 }
 
+
+
 #header {
     background-color: rgba(57, 77, 99, 0.9);
     display: flex;
@@ -65,3 +67,4 @@ input {
 #registrar:hover {
     background-color: gray;
 }
+

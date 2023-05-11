@@ -16,7 +16,7 @@
             Pagina de registro
         </p>
     </header>
-    <form class="cuerpo" action="../code/agregar.php" method="post">
+    <form class="cuerpo" action="../code/agregar.php" method="post" enctype="multipart/form-data">
         <div class="registroContenido">
             <label for="nombre">Nombre</label>
             <input type="text" id="nombre" name="nombre" autocomplete="off">
@@ -26,6 +26,7 @@
             <input type="password" name="pswd2" id="pswd2">
             <label for="profileImage">Imagen de perfil</label>
             <input type="file" name="profileImage" class="profileImage" id="profileImage">
+          
         </div>
         <div class="divBtnReg">
             <button class="btnReg" type="submit">Registrar</button>
